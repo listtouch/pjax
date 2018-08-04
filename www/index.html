@@ -1,0 +1,11 @@
+
+                <div>name{{title}}--{{fullName title}}</div>
+
+                <!-- //测试帮助方法 -->
+               
+                  {{#forEach accounts}}
+                    <a href="/other" title="Send an email to {{ name }}">
+                      {{ name }}
+                    </a>{{#unless isLast}}, {{/unless}}
+                  {{/forEach}}
+     
