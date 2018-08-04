@@ -26,7 +26,7 @@
          // return;
         $.pjax.defaults.timeout = 6000;
 
-        $(document).pjax('a[target!=_blank][target!=_self]', '#pjax-container',{push:false});
+        $(document).pjax('a[target!=_blank][target!=_self]', '#pjax-container',{push:true});
 
         $(document).on('pjax:send', function () {
             alert("1111");
